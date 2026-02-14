@@ -35,3 +35,18 @@ def subtract(num1:float, num2:float) -> float:
     return num1 - num2
 
 
+def multiply(num1:float, num2:float) -> float:
+    '''
+    Multiply 2 floats
+    
+    :param num1: First number to be multiplied
+    :type num1: float
+    :param num2: Second number to be multiplied
+    :type num2: float
+    :return: Product of num1 and num2
+    :rtype: float
+    '''
+    
+    return num1 * num2
+
+
