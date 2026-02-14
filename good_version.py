@@ -79,3 +79,36 @@ def get_inputs() -> tuple[float, float]:
     return (num1, num2)
         
     
+def calc(num1:float, num2:float) -> tuple[float, bool]:
+    '''
+    Calculate result of operation with 2 floats
+    
+    :param num1: 1st operand
+    :type num1: float
+    :param num2: 2nd operand
+    :type num2: float
+    :return: (operation solution, success of function)
+    :rtype: tuple[float, bool]
+    '''
+    
+    result:tuple[float,bool] = (0, False)
+    
+    solution:float = 0
+    
+    operation:str = input("Choose operation (+, -, *, /): ")
+    
+    match (operation):
+        case "+":
+            solution = add(num1, num2)
+        case "-":
+            solution = subtract(num1, num2)
+        case "*":
+            solution = multiply(num1, num2)
+        case "/":
+            solution = divide(num1, num2)
+        case _:
+            return result
+    
+    result = (solution, True)
+    
+    return result
