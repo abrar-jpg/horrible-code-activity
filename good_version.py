@@ -137,3 +137,6 @@ def main_menu():
         
     except:
         print(error_message)
+    
+    
+main_menu()
