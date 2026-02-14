@@ -65,3 +65,17 @@ def divide(num1:float, num2:float) -> float:
     return num1 / num2
 
 
+def get_inputs() -> tuple[float, float]:
+    '''
+    Get float inputs from user
+    
+    :return: tuple of input floats in the order they were entered by the user 
+    :rtype: tuple[float, float]
+    '''
+    
+    num1:float = float(input("Enter first number: "))
+    num2:float = float(input("Enter second number: "))
+    
+    return (num1, num2)
+        
+    
