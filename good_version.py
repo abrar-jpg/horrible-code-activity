@@ -1,6 +1,6 @@
 '''
 :author: Varun Venkatadri
-:author: Abrar Ferdou
+:author: Abrar Ferdous
 
 Simple Calculator
 
