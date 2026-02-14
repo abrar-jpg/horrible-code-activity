@@ -112,3 +112,28 @@ def calc(num1:float, num2:float) -> tuple[float, bool]:
     result = (solution, True)
     
     return result
+
+
+def main_menu():
+    '''
+    Main Menu
+    '''
+    
+    print("Simple Calculator")
+    
+    error_message:str = "Invalid Operation."
+    
+    inputs:tuple[float, float] = (0, 0)
+    
+    try:
+        inputs = get_inputs()
+        
+        result:tuple[float, bool] = calc(inputs[0], inputs[1])
+        
+        if result[1]:
+            print(f"Result: {result[0]}") 
+        else:
+            raise ValueError
+        
+    except:
+        print(error_message)
